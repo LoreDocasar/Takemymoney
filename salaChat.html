@@ -105,16 +105,25 @@
                             <li class="active"><a href="perfil.html">Perfil</a></li>
                         </ol>
                     </div>
-                    <!-- Verificación -->
-                    <div class="col-md-6 col-sm-6">
-                        <h2>¿Está seguro que desea borrar el producto?</h2>
+                    <!-- Aquí es donde se estrucura el chat, como no sabía hacerlo lo saqué de: 
+                    https://css-tricks.com/jquery-php-chat/ -->
+                    <div id="page-wrap">
+
+                        <h2>Sala del producto : (aquí va el nombre del producto)</h2>
+                        <!-- En esta zona aparece el nombre del usuario que mande el mensaje -->
+                        <p id="name-area"></p>
+                        <!-- Aquí aparecerá en teoría el mensaje en cuestión y se repetirá el proceso para todos los mensajes -->
+                        <div id="chat-wrap"><div id="chat-area"></div></div>
+                        <!-- Aquí se muestra el formulario para mandar un mensaje nuevo al chat -->
+                        <form id="send-message-area">
+                            <p>Tu mensaje: </p>
+                            <textarea id="sendie" maxlength = '100'></textarea>
+                        </form>
+
                     </div>
-                    
-                    <!-- Botones de verificación -->
-                    <div class="col-md-6 col-sm-6">
-                        <button type="button" class="buttonDelete" onclick="alert('¡¡Producto Borrado!!')">Borrar</button>
-                      <a href="datosProducto.html" class="button">Volver</a>
-                    </div>
+
+                    <button type="button" class="button" onclick="alert('¡¡Mensaje enviado!!')">Enviar</button>
+                    <a href="datosProducto.html" class="button">Volver</a>
 
                 </section>
 
