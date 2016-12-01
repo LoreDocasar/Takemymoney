@@ -138,3 +138,16 @@ transition:all 500ms ease;
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.buttonDelete {
+    background-color: #f82020;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
