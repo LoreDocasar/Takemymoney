@@ -151,3 +151,7 @@ transition:all 500ms ease;
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.send-message-area{
+    width: 100%;
+}
